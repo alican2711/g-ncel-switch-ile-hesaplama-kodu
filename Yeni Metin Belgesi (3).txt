@@ -1,0 +1,56 @@
+import java.util.Scanner;
+
+public class switchard {
+    public static void main(String[] args){
+        Scanner scanner = new Scanner (System.in);
+        System.out.println("******************************");
+        String islemler = "1.toplama işlemi\n"
+                            +"2.çıkarma işlemi\n"
+                            +"3.çarpma işlemi\n"
+                            +"4.çarpma işlemi\n";
+        int a ;
+        int b;
+        System.out.println(islemler);
+        System.out.println("*******************************");
+        System.out.println("işlem");
+        String işlem = scanner.nextLine();
+
+        switch (işlem){
+            case  "1" :
+                System.out.println("birinci sayı:");
+                a = scanner.nextInt();
+                System.out.println("ikinci sayı :");
+                b= scanner.nextInt();
+                System.out.println("toplama işlemi sonucu:"+(a+b));
+                break;
+            case "2" :
+                System.out.println("birinci sayı :");
+                a = scanner.nextInt();
+                System.out.println("ikinci sayı :");
+                b = scanner.nextInt();
+                System.out.println("çıkarma işlemi sonucu :"+(a-b));
+                break;
+            case "3" :
+                System.out.println("birinci sayı :");
+                a = scanner.nextInt();
+                System.out.println("ikinci sayı:");
+                b= scanner.nextInt();
+                System.out.println("çarpma işlemi sonucu :"+(a*b));
+                break;
+            case "4":
+                System.out.println("birinci sayı :");
+                a = scanner.nextInt();
+                System.out.println("ikinci sayı");
+                b = scanner.nextInt();
+                System.out.println("böylme işlemni sonucu :"+(double) a/ (b));
+                break;
+
+
+
+
+
+
+
+        }
+    }
+}
